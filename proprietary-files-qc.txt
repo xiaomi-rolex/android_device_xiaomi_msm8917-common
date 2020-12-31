@@ -587,13 +587,13 @@ vendor/lib64/libqmi_csi.so|5e3d7a6c18f10c30d152bd87cd24b0c787f6ded3
 vendor/lib64/libqmi_encdec.so|68fb631317150d66fd1a39c48f8ef9e0405bbdf2
 -vendor/lib64/libqmiservices.so|842a1b61fad7dd34753e945ee2ada0fdc9589c09
 
-# QMI - from Olive 10/QKQ1.191014.001
+# QMI - from LA.UM.9.6.2.r1-03300-89xx.0
 etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
-vendor/lib64/libpdmapper.so|cdc5b101e8f6a4e0cc18be02e1a4d95527ba9d9c
-vendor/lib64/libqmi_cci.so|411a074dc765fb263bec50531ce5c408dd72388f
-vendor/lib64/libqsocket.so|8a1927456c480d66583cd1551bbe3f71d2bac42d
-vendor/lib/libpdmapper.so|39fecb52d748ed95e9e747ff911cd8a370d67e50
-vendor/lib/libqmi_cci.so|a921e84ec500f7cfb7fe88a4ffba149581410a44
+vendor/lib/libpdmapper.so|c8f48eeef2bcdabec913395fd698f29aa39ad18f
+vendor/lib/libqmi_cci.so|9c26c6054a6d700dd3fd944dadb7009000c26008
+vendor/lib64/libpdmapper.so|d186b3b7f48ddddb6fffae3cbf1da9351a6fd8d9
+vendor/lib64/libqmi_cci.so|d35ef8e2412cb7f88887035a02ac83a10ebeaf1f
+vendor/lib64/libqsocket.so|391748e46f7dbbf267dbc5a5c89f0d2a8b4fca4e
 
 # Radio - from Tissot PKQ1.180917.001.V10.0.17.0.PDHMIXM
 -app/QtiTelephonyService/QtiTelephonyService.apk:product/app/QtiTelephonyService/QtiTelephonyService.apk|420b39e20a5166940c1e2e55e8d9c92ec910cebb
@@ -601,7 +601,6 @@ framework/QtiTelephonyServicelibrary.jar:product/framework/QtiTelephonyServiceli
 framework/qcrilhook.jar:product/framework/qcrilhook.jar|784df5e6aa9df0127700b9a6f1083440ebfac057
 vendor/bin/ATFWD-daemon|d8e8b853f33411504054eb965b1fb836544daee4
 vendor/bin/netmgrd|e9c82b0644cb08b160a2ce484fdb58830306237d
-vendor/bin/port-bridge|28265e259a83b1370827f626fad4abe6784a9025
 vendor/bin/qti|28c5da423ba2e0c7873c24e6eca4bb4db7f41fe8
 vendor/bin/rmt_storage|68113b986cef176c9d808fb7fb870ed61d4846bd
 vendor/bin/tftp_server|05a9c0e0e691e534e703bded4a99083d25a26ebb
@@ -641,19 +640,21 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|bf72b4543af85ba2
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|99296dc2831410fed5df4e397845618b40d0a3a1
 vendor/radio/qcril_database/qcril.db|43b7d5e7ededc9cd5c0b1f7a8941d21d4eb0c9c1
 
-# Radio - from Olive 10/QKQ1.191014.001
-product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
-product/etc/permissions/telephony_product_privapp-permissions-qti.xml|68901007ba1a48ceb1b728fc3b5483dd51b5e3a0
-product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|20c011ffc54539161fa7cc05c55c9c5ed3f936b4
-vendor/bin/adpl|b17b019865f69b9c07de57c9909bd68fcfe72879
-vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
-vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
-vendor/etc/init/netmgrd.rc|fd3457c69a9fab11b87d0d1b494188fe089684cd
-vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
-
 # Radio - from LA.UM.9.6.2.r1-03300-89xx.0
 system_ext/framework/qti-telephony-common.jar|f299a07201e2ce4cd65d28faa3b9730746e201ae
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|344ad9179560cc83b208f62fb009fdc2799609fd
+system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61731e56d253766554d4479519cea3ff
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
+system_ext/etc/permissions/telephonyservice.xml|b7831598d3c19c6ce4ef431d1cc44d94c3c35a8d
+vendor/bin/adpl|ff3da13d82b8cf06b3e3b01fc3ddf6ddf0b8113d
+vendor/bin/port-bridge|54fb0045adb9673bf7daf8d9732728af2397754d
+vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
+vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
+vendor/etc/init/netmgrd.rc|3d8770715d15374c4c6a535e3f41ea640d193202
+vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
+vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
+vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
 
 # Radio (IMS) - from Tissot PKQ1.180917.001.V10.0.17.0.PDHMIXM
 lib64/com.qualcomm.qti.imscmservice@1.0.so:product/lib64/com.qualcomm.qti.imscmservice@1.0.so|e622ddede56d6a9dcb9d3dbcff7c33ab3f4c1131
@@ -693,14 +694,25 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|bee66b95aa31d6c536e27b67aed2094b0b6
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so|f4eef520bbf98e6e1ac8697ef7eef0109487dba1
 vendor/lib64/vendor.qti.imsrtpservice@1.0.so|559a2dbf409d86746ed4303f2e0089256bb91a07
 
-# Radio - IMS - from Olive 10/QKQ1.191014.001
-product/lib64/libimscamera_jni.so|41512d3b9cd72b96e9b8ad5463566a3769f06cc1
-product/lib64/libimsmedia_jni.so|09b3c1ca8ba580a5b19aeba47b55399a88fef5e7
--product/priv-app/ims/ims.apk|ef3104f70815386bb19f5760fc0ed19c6e94d3ce
+# Radio (IMS) - from LA.UM.9.6.2.r1-03300-89xx.0
+system_ext/lib/vendor.qti.imsrtpservice@3.0.so|a5318e8e9b4465cb9f5ff5d322461a5ba53a6f91
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|7157c5a2852683df0a50a588a09b7e5a0c5688da
+system_ext/lib64/libimscamera_jni.so|217354bfe6d1e1736572218b1a34468937544350
+system_ext/lib64/libimsmedia_jni.so|c804adc4d7224303a53f6270e6c1cf9319008a05
+-system_ext/priv-app/ims/ims.apk|d1ccd646ccc64a52d3b34ff17c73319558896396
+vendor/etc/init/ims_rtp_daemon_legacy.rc|104b2a879db4d3dd44e74a3d7f6e69f6972c9129
 vendor/etc/init/imsdatadaemon.rc|29face37c174aebcd1358f7d7ad0bd4baf83063b
 vendor/etc/init/imsqmidaemon.rc|dda16d842b7c65296e97bc9921b723a43b152ba3
 vendor/etc/init/imsrcsd.rc|2dc42ff6e4b6dd389bd3bc9a7af30dec2f1a45df
-vendor/etc/init/ims_rtp_daemon.rc|b3c3a380204d7b1b3a58937db8c8e76c00ac8825
+vendor/lib/vendor.qti.imsrtpservice@3.0.so|1333f4cb493bfcf6f9c7f5d6b15c3af38b681373
+vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|5d71371d3eb10481f95a018481dfb62a5929110d
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
+system_ext/lib64/lib-imscamera.so|53b2b35ac8bd114ced7771d71d9632fe91776989
+system_ext/lib64/lib-imsvideocodec.so|9c79def1f8666adcd82ebc6209ffe112735eb0e7
+system_ext/lib64/lib-imsvt.so|fede56b03e0d8b0ac7413c6361ab3fc9ad621457
+system_ext/lib64/lib-imsvtextutils.so|69a9466876cea5148dcde702c00c75bea0c98520
+system_ext/lib64/lib-imsvtutils.so|e913f50139f4878e62a75a5bcd0b50245b2fcadf
+vendor/lib64/lib-imsvtcore.so|6055d42a288d49d7d1d8ca031485f0d6f65c35f4
 
 # RTP Libs - from vangogh:11/RKQ1.200826.002
 system_ext/lib/libmmrtpdecoder.so|e50c35366bd428ac29e8a828cfd6b22aa08a0a55
